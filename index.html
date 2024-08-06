@@ -24,6 +24,10 @@
         .main-color {
             color: rgba(14, 50, 100, 0.916);
         }
+        .main-color-dark {
+            color: rgba(10, 40, 100, 1);
+        }
+        
 
         .second-color {
             color: rgba(7, 35, 56, 0.916);
@@ -37,18 +41,70 @@
         .min-text {
             font-size: 85%;
         }
+
+        
+
+        /* print styles */
+        @media print {
+            
+        .pagebreak {
+            clear: both;
+            page-break-after: always;
+        }
+        .pmt-1 {
+            margin-top: 25px;
+        }
+        .ppt-1 {
+            padding-top: 25px;
+        }
+
+        .pmt-2 {
+            margin-top: 50px;
+        }
+        .ppt-2 {
+            padding-top: 50px;
+        }
+
+        .pmt-3 {
+            margin-top: 75px;
+        }
+        .ppt-3 {
+            padding-top: 75px;
+        }
+
+        .pmt-4 {
+            margin-top: 100px;
+        }
+        .ppt-4 {
+            padding-top: 100px;
+        }
+
+        .pmt-5 {
+            margin-top: 125px;
+        }
+        .ppt-5 {
+            padding-top: 125px;
+        }
+
+        .pmt-6 {
+            margin-top: 150px;
+        }
+        .ppt-6 {
+            padding-top: 170px;
+        }
+
+        }
     </style>
 
 </head>
 
 <body>
 
-
     <div class="container-fluid p-5 pt-5">
         <div class="row">
             <div class="col-8 display: flex;">
                 <a href="https://www.linkedin.com/in/lucas-coutinho-7185b7154/" target="_blank">
-                    <h2> Lucas Coutinho Bezerra </h2>
+                    <h2 class="main-color-dark" > Lucas Coutinho Bezerra </h2>
                     <h4 class="main-color"> Desenvolvedor Java </h4>
                 </a>
                 <p class="min-text">
@@ -105,9 +161,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12 mt-5">
-                            <p> &nbsp; </p> <br /><br />
-                        </div>
+                        
                         <div class="col-3 min-text" style="margin: 0px; padding: 0px">
                             <b class="main-color"> Jun 2019 — Abr 2020 </b> <br /> Vitória/ES
                         </div>
@@ -128,10 +182,8 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-12 mt-5">
-                            <p> &nbsp; </p> <br /><br />
-                        </div>
+                    <div class="row ppt-1">
+                        
                         <div class="col-3 min-text" style="margin: 0px; padding: 0px">
                             <b class="main-color"> Nov 2020 - Fev 2022 </b> <br /> Vitória/ES
                         </div>
@@ -154,9 +206,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12 mt-5">
-                            <p> &nbsp; </p> <br /><br />
-                        </div>
+                        
                         <div class="col-3 min-text" style="margin: 0px; padding: 0px">
                             <b class="main-color"> Fev 2022 - Set 2023 </b> <br /> Vitória/ES
                         </div>
@@ -181,12 +231,12 @@
                         </div>
                     </div>
 
+                    <div class="pagebreak"> </div>
 
-                    <div class="row">
-                        <div class="col-12 mt-5">
-                            <p> &nbsp; </p> <br /><br />
-                        </div>
-                        <div class="col-3 min-text" style="margin: 0px; padding: 0px">
+
+                    <div class="row ppt-1">
+                        
+                        <div class="col-3 min-text " style="margin: 0px; padding: 0px">
                             <b class="main-color"> Fev 2024 - Mai 2024 </b> <br /> Serra/ES
                         </div>
                         <div class="col-9">
